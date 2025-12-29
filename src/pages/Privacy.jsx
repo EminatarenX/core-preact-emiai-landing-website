@@ -1,4 +1,20 @@
+import { useEffect } from 'preact/hooks';
+
 export function Privacy() {
+  useEffect(() => {
+    // Check if there is a hash in the URL (e.g., #eliminacion-datos)
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        // Wait a small tick to ensure DOM is fully ready if needed, or scroll immediately
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -91,8 +107,26 @@ export function Privacy() {
               <li>La eliminación permanente de tu cuenta y datos asociados.</li>
               <li>La corrección de cualquier información inexacta.</li>
             </ul>
+          </section>
+
+          <section id="eliminacion-datos">
+            <h2>6. Eliminación de Datos (Cumplimiento Meta)</h2>
             <p>
-              Para ejercer estos derechos, contáctanos en <a href="mailto:enataren@emicorp.org">enataren@emicorp.org</a>.
+              De conformidad con las Políticas de Datos de Usuario de Meta, proporcionamos un mecanismo claro para que solicites la eliminación de tus datos.
+            </p>
+            <p>
+              <strong>Instrucciones para eliminar tus datos:</strong>
+            </p>
+            <ol>
+              <li>Envía un correo electrónico a <a href="mailto:enataren@emicorp.org">enataren@emicorp.org</a>.</li>
+              <li>Utiliza el asunto: <strong>"Solicitud de Eliminación de Datos - [Nombre de tu Empresa]"</strong>.</li>
+              <li>En el cuerpo del correo, confirma el número de WhatsApp Business asociado que deseas desvincular.</li>
+            </ol>
+            <p>
+              Procesaremos tu solicitud y eliminaremos todos los registros asociados a tu cuenta en un plazo máximo de 30 días, confirmando la acción vía email.
+            </p>
+            <p>
+              Para ejercer estos derechos generales, también puedes contactarnos en el mismo correo.
             </p>
           </section>
         </div>
