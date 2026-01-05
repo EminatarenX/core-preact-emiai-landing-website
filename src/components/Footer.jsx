@@ -6,10 +6,10 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-lg font-bold tracking-tight text-primary mb-4">EMI</h3>
+            <h3 className="text-lg font-bold tracking-tight text-primary mb-4">EmiCorp</h3>
             <p className="text-sm text-gray-500 max-w-xs leading-relaxed">
               Plataforma de agentes conversacionales inteligentes para WhatsApp.
-              Automatiza ventas, atención y procesos operativos.
+              Operado por Emiliano Nataren Del Rivero.
             </p>
           </div>
           <div>
@@ -51,7 +51,7 @@ export function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} EMI Corp. Todos los derechos reservados.
+            © {new Date().getFullYear()} Emiliano Nataren Del Rivero. Todos los derechos reservados.
           </p>
           <p className="text-xs text-gray-400 flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-green-500"></span>

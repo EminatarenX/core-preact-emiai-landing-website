@@ -43,7 +43,7 @@ export function Privacy() {
               <h3 className="text-lg font-medium text-blue-900">Cumplimiento con Meta y WhatsApp</h3>
               <div className="mt-2 text-blue-700 text-sm leading-relaxed">
                 <p>
-                  EMI opera en estricto cumplimiento con las Políticas de WhatsApp Business y los Términos de Servicio de Meta.
+                  EmiCorp opera en estricto cumplimiento con las Políticas de WhatsApp Business y los Términos de Servicio de Meta.
                   Tus datos y los de tus clientes están protegidos bajo estándares de seguridad de nivel empresarial.
                 </p>
               </div>
@@ -56,7 +56,7 @@ export function Privacy() {
           <section>
             <h2>1. Introducción</h2>
             <p>
-              En EMI ("nosotros", "nuestro"), nos tomamos muy en serio la confidencialidad de tu información.
+              En EmiCorp (Emiliano Nataren Del Rivero), nos tomamos muy en serio la confidencialidad de tu información.
               Esta Política de Privacidad describe cómo recopilamos, usamos y protegemos tus datos cuando utilizas
               nuestra plataforma de automatización para WhatsApp.
             </p>
@@ -100,7 +100,7 @@ export function Privacy() {
           <section>
             <h2>5. Tus derechos</h2>
             <p>
-              Como usuario de EMI, tienes control total sobre tus datos. Puedes solicitar:
+              Como usuario de EmiCorp, tienes control total sobre tus datos. Puedes solicitar:
             </p>
             <ul>
               <li>Una copia de todos los datos almacenados de tu empresa.</li>
