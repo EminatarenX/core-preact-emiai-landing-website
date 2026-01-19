@@ -35,7 +35,15 @@ export function Footer() {
                   href="/privacy"
                   className="text-sm text-gray-500 hover:text-primary transition-colors"
                 >
-                  Privacidad y Términos
+                  Política de Privacidad
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-sm text-gray-500 hover:text-primary transition-colors"
+                >
+                  Condiciones del Servicio
                 </Link>
               </li>
               <li>

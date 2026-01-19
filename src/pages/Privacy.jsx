@@ -21,7 +21,7 @@ export function Privacy() {
       <div className="bg-gray-50 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary mb-4">
-            Privacidad y Términos
+            Política de Privacidad
           </h1>
           <p className="text-lg text-gray-500">
             Última actualización: {new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}
@@ -110,7 +110,7 @@ export function Privacy() {
           </section>
 
           <section id="eliminacion-datos">
-            <h2>6. Eliminación de Datos (Cumplimiento Meta)</h2>
+            <h2>6. Instrucciones para la Eliminación de Datos (Meta)</h2>
             <p>
               De conformidad con las Políticas de Datos de Usuario de Meta, proporcionamos un mecanismo claro para que solicites la eliminación de tus datos.
             </p>
