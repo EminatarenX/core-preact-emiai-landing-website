@@ -39,6 +39,14 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <a
+                  href="/privacy#eliminacion-datos"
+                  className="text-sm text-gray-500 hover:text-primary transition-colors"
+                >
+                  Eliminación de datos
+                </a>
+              </li>
+              <li>
                 <Link
                   href="/terms"
                   className="text-sm text-gray-500 hover:text-primary transition-colors"
