@@ -94,7 +94,7 @@ export function Home() {
               </div>
               <h3 className="mb-3 text-xl font-bold text-primary">Respuestas Instantáneas</h3>
               <p className="leading-relaxed text-gray-500">
-                Olvídate de dejar a tus clientes en "visto". EMI responde en segundos,
+                Olvídate de dejar a tus clientes en "visto". EmiCorp responde en segundos,
                 cualquier día, a cualquier hora.
               </p>
             </div>
@@ -144,7 +144,7 @@ export function Home() {
               Puesta en marcha en 3 pasos
             </h2>
             <p className="text-lg text-gray-300">
-              Sin integraciones complejas ni código. Estás listo en minutos.
+              Sin integraciones complejas ni codigo. Estas listo en minutos.
             </p>
           </div>
 
@@ -157,9 +157,10 @@ export function Home() {
               <div className="flex items-center justify-center w-24 h-24 mb-6 text-2xl font-bold text-primary bg-white rounded-full shadow-xl border-4 border-blue-900 z-10">
                 1
               </div>
-              <h3 className="mb-2 text-xl font-bold text-white">Conecta tu WhatsApp</h3>
+              <h3 className="mb-2 text-xl font-bold text-white">Conecta tu cuenta de WhatsApp Business</h3>
               <p className="text-sm text-gray-400 max-w-xs">
-                Escanea el código QR o vincula tu número de WhatsApp Business API.
+                Vincula tu numero mediante el flujo oficial de Embedded Signup de Meta. EmiCorp
+                no almacena ni tiene acceso a tus credenciales o tokens de WhatsApp.
               </p>
             </div>
 
@@ -168,9 +169,10 @@ export function Home() {
               <div className="flex items-center justify-center w-24 h-24 mb-6 text-2xl font-bold text-primary bg-white rounded-full shadow-xl border-4 border-blue-900 z-10">
                 2
               </div>
-              <h3 className="mb-2 text-xl font-bold text-white">Configura tu Agente</h3>
+              <h3 className="mb-2 text-xl font-bold text-white">Configura tu Agente y Plantillas</h3>
               <p className="text-sm text-gray-400 max-w-xs">
-                Define tus horarios, sube tu catálogo o servicios y personaliza las respuestas.
+                Define horarios, carga tu catalogo o servicios, y administra tus plantillas de
+                mensajes aprobadas por Meta desde un solo panel.
               </p>
             </div>
 
@@ -179,40 +181,140 @@ export function Home() {
               <div className="flex items-center justify-center w-24 h-24 mb-6 text-2xl font-bold text-primary bg-white rounded-full shadow-xl border-4 border-blue-900 z-10">
                 3
               </div>
-              <h3 className="mb-2 text-xl font-bold text-white">Activa el Piloto Automático</h3>
+              <h3 className="mb-2 text-xl font-bold text-white">Activa el Piloto Automatico</h3>
               <p className="text-sm text-gray-400 max-w-xs">
-                Observa cómo EMI atiende clientes y genera ventas mientras tú duermes.
+                EmiCorp gestiona mensajes entrantes y salientes a traves de la API oficial de
+                WhatsApp Business mientras tu te concentras en crecer tu negocio.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* WhatsApp Platform Transparency */}
+      <section className="py-16 bg-white border-y border-gray-100">
+        <div className="px-4 mx-auto max-w-4xl sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-primary mb-3">
+              Como EmiCorp utiliza WhatsApp Business Platform
+            </h2>
+            <p className="text-gray-500">
+              Transparencia total sobre el uso de los permisos de la API de WhatsApp Business de Meta.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-6 bg-gray-50 rounded-xl border border-gray-100">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                  <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-primary mb-1">whatsapp_business_messaging</h3>
+                  <p className="text-sm text-gray-500">
+                    Permite enviar y recibir mensajes de texto, plantillas aprobadas por Meta y
+                    notificaciones a los clientes finales de cada negocio suscrito a EmiCorp. Los
+                    mensajes se procesan en tiempo real y no se almacenan mas alla de lo necesario
+                    para generar la respuesta automatica.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 bg-gray-50 rounded-xl border border-gray-100">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-primary mb-1">whatsapp_business_management</h3>
+                  <p className="text-sm text-gray-500">
+                    Permite gestionar cuentas de WhatsApp Business (WABA), crear y administrar
+                    plantillas de mensajes, y consultar el estado de los numeros de telefono
+                    asociados. El onboarding se realiza exclusivamente mediante Embedded Signup
+                    oficial de Meta. EmiCorp no almacena tokens de acceso permanentes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p className="text-xs text-gray-400 text-center mt-6">
+            EmiCorp es una plataforma SaaS multitenant. Cada negocio suscrito gestiona su propia
+            cuenta de WhatsApp Business a traves de EmiCorp como Proveedor de Soluciones de
+            WhatsApp Business (BSP). Para mas informacion sobre como se procesan tus datos,
+            consulta nuestra{' '}
+            <a href="/privacy" className="underline hover:text-primary transition-colors">
+              Politica de Privacidad
+            </a>.
+          </p>
+        </div>
+      </section>
+
       {/* Use Cases Grid */}
       <section className="py-20 md:py-32 bg-gray-50">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-            <div className="max-w-xl">
-              <h2 className="mb-4 text-3xl font-bold tracking-tight text-primary">
-                Diseñado para todo tipo de servicios
-              </h2>
-              <p className="text-lg text-gray-500">
-                Nuestra IA es flexible y se adapta a las necesidades específicas de tu industria.
-              </p>
+          <div className="max-w-3xl mx-auto mb-14 text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 mb-5 text-sm font-medium text-indigo-700 rounded-full bg-indigo-50 border border-indigo-100">
+              <span>📌</span>
+              Servicios con agenda y citas
             </div>
-            <div className="hidden md:block">
-              <Button variant="secondary" className="bg-white">Ver todos los sectores</Button>
-            </div>
+            <h2 className="mb-4 text-3xl font-bold tracking-tight text-primary">
+              Hecho para profesionales que trabajan con citas
+            </h2>
+            <p className="text-lg text-gray-500">
+              EmiCorp confirma, recuerda y reagenda citas por WhatsApp de forma automatica,
+              para que tu solo te enfoques en atender a tus pacientes o clientes.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {['Barberías & Spas', 'Restaurantes', 'Clínicas', 'Retail'].map((sector, i) => (
-              <div key={i} className="group p-6 bg-white border border-gray-100 rounded-xl hover:shadow-md transition-all cursor-default">
-                <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-green-500 rounded-full mb-4 group-hover:w-20 transition-all"></div>
-                <h3 className="text-lg font-bold text-primary mb-2">{sector}</h3>
-                <p className="text-sm text-gray-500">
-                  Desde agendamiento de citas hasta gestión de menús y toma de pedidos.
-                </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            {[
+              {
+                emoji: '🧠',
+                titulo: 'Psicologos',
+                desc: 'Agenda sesiones, envia recordatorios y gestiona cancelaciones sin interrumpir tu consulta.',
+              },
+              {
+                emoji: '🦷',
+                titulo: 'Dentistas',
+                desc: 'Confirma citas de limpieza, ortodoncia o urgencias. Reduce los no-shows con recordatorios automaticos.',
+              },
+              {
+                emoji: '🏃',
+                titulo: 'Fisioterapeutas',
+                desc: 'Organiza sesiones de rehabilitacion y notifica a tus pacientes con horarios actualizados en tiempo real.',
+              },
+              {
+                emoji: '✨',
+                titulo: 'Clinicas esteticas',
+                desc: 'Reserva tratamientos faciales, corporales y rellenos. EmiCorp muestra disponibilidad y cierra la cita al instante.',
+              },
+              {
+                emoji: '🥗',
+                titulo: 'Nutriologos',
+                desc: 'Coordina consultas de seguimiento y envia recordatorios de proximas citas de forma totalmente automatica.',
+              },
+              {
+                emoji: '👨‍⚕️',
+                titulo: 'Doctores especialistas',
+                desc: 'Filtra el motivo de consulta, confirma disponibilidad y agenda con el especialista correcto sin friccion.',
+              },
+              {
+                emoji: '💈',
+                titulo: 'Barberias premium y spas',
+                desc: 'Reserva servicios especificos con el estilista preferido. Aumenta la recurrencia con seguimiento post-visita.',
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="group p-6 bg-white border border-gray-100 rounded-2xl hover:shadow-lg hover:border-blue-100 transition-all cursor-default"
+              >
+                <div className="text-3xl mb-4">{item.emoji}</div>
+                <h3 className="text-base font-bold text-primary mb-2">{item.titulo}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>

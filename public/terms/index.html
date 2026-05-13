@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Condiciones del Servicio | Emi AI (EmiCorp)</title>
+    <title>Condiciones del Servicio | EmiCorp</title>
     <meta
       name="description"
-      content="Condiciones del Servicio de Emi AI (EmiCorp)."
+      content="Condiciones del Servicio de EmiCorp, operado por Emiliano Nataren Del Rivero."
     />
     <link rel="canonical" href="https://emicorp.org/terms" />
     <style>
@@ -19,8 +19,7 @@
         --card: #f8fafc;
         --link: #2563eb;
       }
-      html,
-      body {
+      html, body {
         margin: 0;
         padding: 0;
         background: var(--bg);
@@ -29,44 +28,15 @@
           Arial, "Apple Color Emoji", "Segoe UI Emoji";
         line-height: 1.6;
       }
-      a {
-        color: var(--link);
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      .wrap {
-        max-width: 860px;
-        margin: 0 auto;
-        padding: 40px 20px;
-      }
-      header {
-        border-bottom: 1px solid var(--border);
-        background: #f8fafc;
-      }
-      header .wrap {
-        padding-top: 44px;
-        padding-bottom: 44px;
-      }
-      h1 {
-        margin: 0 0 6px 0;
-        font-size: 32px;
-        letter-spacing: -0.02em;
-      }
-      .sub {
-        margin: 0;
-        color: var(--muted);
-        font-size: 14px;
-      }
-      h2 {
-        margin-top: 28px;
-        margin-bottom: 10px;
-        font-size: 18px;
-      }
-      ul {
-        margin: 8px 0 8px 22px;
-      }
+      a { color: var(--link); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+      header { border-bottom: 1px solid var(--border); background: #f8fafc; }
+      header .wrap { padding-top: 44px; padding-bottom: 44px; }
+      h1 { margin: 0 0 6px 0; font-size: 32px; letter-spacing: -0.02em; }
+      .sub { margin: 0; color: var(--muted); font-size: 14px; }
+      h2 { margin-top: 28px; margin-bottom: 10px; font-size: 18px; }
+      ul, ol { margin: 8px 0 8px 22px; }
       .footer {
         margin-top: 46px;
         padding-top: 18px;
@@ -75,9 +45,11 @@
         font-size: 13px;
       }
       code {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-          "Courier New", monospace;
-        font-size: 0.95em;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 0.9em;
+        background: #f1f5f9;
+        padding: 1px 5px;
+        border-radius: 4px;
       }
     </style>
   </head>
@@ -86,59 +58,115 @@
       <div class="wrap">
         <h1>Condiciones del Servicio</h1>
         <p class="sub">
-          Emi AI (EmiCorp) · Nombre legal: Emiliano Nataren Del Rivero · Última actualización: 2026-02-07
+          EmiCorp &middot; Nombre legal: Emiliano Nataren Del Rivero &middot; Ultima actualizacion: 2026-05-13
         </p>
       </div>
     </header>
 
     <main class="wrap">
-      <h2>1. Aceptación</h2>
+
+      <h2>1. Partes del contrato</h2>
       <p>
-        Al acceder o usar Emi AI (“el Servicio”), aceptas estas Condiciones. Si no estás de
-        acuerdo, no uses el Servicio.
+        El presente contrato se celebra entre <strong>Emiliano Nataren Del Rivero</strong>
+        (RFC NARE021227KI9), Persona Fisica con Actividad Empresarial, responsable de la plataforma
+        EmiCorp, con domicilio fiscal en Calle de Chiapas null6 INT. Piso 2, Roma Norte,
+        Cuauhtemoc, Ciudad de Mexico, Mexico, C.P. 06700 (en adelante "EmiCorp" o "el Proveedor"),
+        y el negocio o persona que se registra y utiliza los servicios (en adelante "el Cliente").
       </p>
 
-      <h2>2. Descripción del servicio</h2>
+      <h2>2. Aceptacion</h2>
       <p>
-        Emi AI ofrece automatización conversacional para WhatsApp Business, incluyendo
-        respuestas automáticas y herramientas operativas relacionadas.
+        Al acceder o usar EmiCorp ("el Servicio"), el Cliente acepta estas Condiciones y la
+        <a href="/privacy">Politica de Privacidad</a>. Si no estas de acuerdo, no uses el Servicio.
       </p>
 
-      <h2>3. Uso responsable</h2>
+      <h2>3. Descripcion del servicio</h2>
+      <p>
+        EmiCorp es una plataforma SaaS multitenant que permite a negocios conectar y administrar
+        sus cuentas de WhatsApp Business mediante la API oficial de WhatsApp Business Platform de
+        Meta Platforms, Inc. El servicio comprende:
+      </p>
       <ul>
-        <li>Cumplir con políticas aplicables de WhatsApp Business y Meta.</li>
-        <li>No usar el Servicio para spam, fraude o contenido ilegal.</li>
-        <li>Mantener seguras tus credenciales y accesos.</li>
+        <li>Onboarding de cuentas mediante el flujo oficial de Embedded Signup de Meta.</li>
+        <li>Envio y recepcion de mensajes a traves de la API de WhatsApp Business (<code>whatsapp_business_messaging</code>).</li>
+        <li>Creacion, gestion y envio de plantillas de mensajes aprobadas por Meta (<code>whatsapp_business_management</code>).</li>
+        <li>Automatizacion de respuestas mediante agentes de inteligencia artificial configurados por el Cliente.</li>
+        <li>Panel de administracion para conversaciones, estadisticas y configuracion del agente.</li>
+      </ul>
+      <p>
+        EmiCorp actua como intermediario tecnico entre el Cliente y la API de WhatsApp Business de
+        Meta. EmiCorp no almacena tokens de acceso permanentes ni credenciales de autenticacion de
+        WhatsApp.
+      </p>
+
+      <h2>4. Cumplimiento con Meta y WhatsApp Business</h2>
+      <p>El Cliente se compromete a:</p>
+      <ul>
+        <li>Cumplir con las Politicas de WhatsApp Business y los Terminos de la Plataforma de Meta.</li>
+        <li>Obtener el consentimiento explicito de sus usuarios finales antes de enviarles mensajes.</li>
+        <li>Utilizar unicamente plantillas de mensajes aprobadas por Meta.</li>
+        <li>No utilizar EmiCorp para enviar mensajes no solicitados (spam), contenido ilegal o enganoso.</li>
+        <li>No eludir limites de tasa, politicas de calidad de numero o restricciones impuestas por Meta.</li>
+      </ul>
+      <p>
+        El incumplimiento puede resultar en la suspension de la cuenta de WhatsApp por Meta y,
+        en consecuencia, en la suspension del servicio de EmiCorp sin responsabilidad para el
+        Proveedor.
+      </p>
+
+      <h2>5. Uso responsable</h2>
+      <ul>
+        <li>Mantener la confidencialidad de las credenciales de acceso a EmiCorp.</li>
+        <li>No compartir la cuenta con terceros no autorizados.</li>
+        <li>Notificar de inmediato ante cualquier uso no autorizado de la cuenta.</li>
       </ul>
 
-      <h2>4. Propiedad intelectual</h2>
+      <h2>6. Propiedad intelectual</h2>
       <p>
-        El Servicio y sus componentes (software, diseño, documentación) son propiedad de EmiCorp
-        o sus licenciantes. No adquieres derechos de propiedad por el uso del Servicio.
+        El software, algoritmos, disenos y materiales de EmiCorp son propiedad intelectual de
+        Emiliano Nataren Del Rivero o sus licenciantes. El uso del servicio no otorga al Cliente
+        ningun derecho de propiedad sobre la tecnologia de EmiCorp. El Cliente conserva la
+        propiedad de los datos de su negocio.
       </p>
 
-      <h2>5. Limitación de responsabilidad</h2>
+      <h2>7. Limitacion de responsabilidad</h2>
+      <ul>
+        <li>No garantizamos disponibilidad ininterrumpida; el servicio depende parcialmente de la API de Meta.</li>
+        <li>No somos responsables por interrupciones causadas por Meta Platforms, Inc.</li>
+        <li>La responsabilidad maxima de EmiCorp se limita al importe pagado por el Cliente en los ultimos 3 meses.</li>
+      </ul>
+
+      <h2>8. Vigencia y terminacion</h2>
       <p>
-        El Servicio se ofrece “tal cual”. No garantizamos disponibilidad ininterrumpida ni que
-        esté libre de errores. No somos responsables por interrupciones de terceros (p. ej. APIs
-        de WhatsApp/Meta).
+        El servicio estara vigente mientras el Cliente mantenga una suscripcion activa. Cualquiera
+        de las partes puede terminarlo con 15 dias naturales de aviso via correo electronico. En
+        caso de incumplimiento grave, EmiCorp puede suspender el acceso de forma inmediata.
       </p>
 
-      <h2>6. Cambios</h2>
+      <h2>9. Legislacion aplicable</h2>
       <p>
-        Podemos actualizar estas Condiciones. Publicaremos la versión vigente en
-        <code>https://emicorp.org/terms</code>.
+        Estas Condiciones se rigen por las leyes de los Estados Unidos Mexicanos. Cualquier
+        controversia se sometera a los tribunales competentes de la Ciudad de Mexico, Mexico.
       </p>
 
-      <h2>7. Contacto</h2>
+      <h2>10. Modificaciones</h2>
       <p>
-        Consultas: <a href="mailto:enataren@emicorp.org">enataren@emicorp.org</a>.
+        Emiliano Nataren Del Rivero se reserva el derecho de modificar estas Condiciones. Los
+        cambios significativos se notificaran con al menos 15 dias de anticipacion. La version
+        vigente estara disponible en <code>https://emicorp.org/terms</code>.
+      </p>
+
+      <h2>11. Contacto</h2>
+      <p>
+        <strong>Nombre legal:</strong> Emiliano Nataren Del Rivero<br />
+        <strong>Correo:</strong> <a href="mailto:enataren@emicorp.org">enataren@emicorp.org</a><br />
+        <strong>Domicilio:</strong> Calle de Chiapas null6 INT. Piso 2, Roma Norte, Cuauhtemoc,
+        Ciudad de Mexico, Mexico, C.P. 06700.
       </p>
 
       <div class="footer">
-        <a href="/">Volver al inicio</a> · <a href="/privacy">Política de privacidad</a>
+        <a href="/">Volver al inicio</a> &middot; <a href="/privacy">Politica de privacidad</a>
       </div>
     </main>
   </body>
 </html>
-

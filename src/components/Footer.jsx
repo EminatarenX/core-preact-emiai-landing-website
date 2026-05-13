@@ -7,9 +7,19 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-lg font-bold tracking-tight text-primary mb-4">EmiCorp</h3>
-            <p className="text-sm text-gray-500 max-w-xs leading-relaxed">
-              Plataforma de agentes conversacionales inteligentes para WhatsApp.
-              Operado por Emiliano Nataren Del Rivero.
+            <p className="text-sm text-gray-500 max-w-sm leading-relaxed">
+              Plataforma SaaS multitenant de agentes conversacionales inteligentes para WhatsApp
+              Business API. El onboarding de cuentas se realiza mediante el flujo oficial de
+              Embedded Signup de Meta. No almacenamos tokens ni credenciales de WhatsApp.
+            </p>
+            <p className="text-sm text-gray-500 max-w-sm leading-relaxed mt-3">
+              EmiCorp es operado por{' '}
+              <strong className="text-gray-600">Emiliano Nataren Del Rivero</strong>,
+              RFC NARE021227KI9, Persona Fisica con Actividad Empresarial.
+            </p>
+            <p className="text-xs text-gray-400 max-w-sm leading-relaxed mt-2">
+              Domicilio fiscal: Calle de Chiapas null6 INT. Piso 2, Roma Norte, Cuauhtemoc,
+              Ciudad de Mexico, Mexico, C.P. 06700.
             </p>
           </div>
           <div>
@@ -17,7 +27,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-sm text-gray-500 hover:text-primary transition-colors">
-                  Características
+                  Caracteristicas
                 </Link>
               </li>
               <li>
@@ -28,14 +38,14 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-sm font-semibold text-primary mb-4">Legal & Contacto</h4>
+            <h4 className="text-sm font-semibold text-primary mb-4">Legal y Contacto</h4>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/privacy"
                   className="text-sm text-gray-500 hover:text-primary transition-colors"
                 >
-                  Política de Privacidad
+                  Politica de Privacidad
                 </Link>
               </li>
               <li>
@@ -43,7 +53,7 @@ export function Footer() {
                   href="/privacy#eliminacion-datos"
                   className="text-sm text-gray-500 hover:text-primary transition-colors"
                 >
-                  Eliminación de datos
+                  Eliminacion de datos
                 </a>
               </li>
               <li>
@@ -65,10 +75,15 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} Emiliano Nataren Del Rivero. Todos los derechos reservados.
-          </p>
+        <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-start gap-4">
+          <div>
+            <p className="text-xs text-gray-400">
+              &copy; {new Date().getFullYear()} Emiliano Nataren Del Rivero. Todos los derechos reservados.
+            </p>
+            <p className="text-xs text-gray-400 mt-1">
+              EmiCorp no esta afiliado a Meta Platforms, Inc. WhatsApp es marca registrada de Meta Platforms, Inc.
+            </p>
+          </div>
           <p className="text-xs text-gray-400 flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-green-500"></span>
             Sistemas operativos
