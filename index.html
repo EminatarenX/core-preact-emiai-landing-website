@@ -3,62 +3,58 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/brand/emicorp-mark.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="EMI - Agentes conversacionales por WhatsApp para automatizar ventas y atención al cliente. Ideal para barberías, restaurantes y servicios locales." />
+    content="EmiCorp hace apps que trabajan por WhatsApp: Emi, el asistente para negocios, y Eko, mototaxi por WhatsApp. Operado por Emiliano Nataren Del Rivero." />
   <meta name="author" content="Emiliano Nataren Del Rivero" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <title>EmiCorp - Agentes Inteligentes (Emiliano Nataren Del Rivero)</title>
+  <meta name="theme-color" content="#fbfaf7" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://emicorp.org/" />
+  <meta property="og:title" content="EmiCorp · Apps que trabajan por WhatsApp" />
+  <meta property="og:description" content="Emi, el asistente de WhatsApp para negocios, y Eko, mototaxi por WhatsApp." />
+  <link rel="canonical" href="https://emicorp.org/" />
+  <link rel="preload" href="/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <title>EmiCorp · Apps que trabajan por WhatsApp (Emiliano Nataren Del Rivero)</title>
   <style>
-    /* Footer estático: ayuda a verificaciones que NO ejecutan JS (Meta Business Verification) */
+    /* Pie legal sin JS: lo ven las verificaciones que no ejecutan JavaScript (Meta Business Verification).
+       Preact lo reemplaza al cargar; el pie del sitio repite la misma información. */
     .legal-footer {
-      border-top: 1px solid rgba(226, 232, 240, 1);
+      border-top: 1px solid #e4e0d6;
       background: #ffffff;
-      color: #475569;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      font-size: 12px;
-      line-height: 1.5;
+      color: #3b5168;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      font-size: 13px;
+      line-height: 1.6;
     }
     .legal-footer__wrap {
       max-width: 1120px;
       margin: 0 auto;
       padding: 16px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 16px;
-      justify-content: space-between;
-      align-items: center;
     }
-    .legal-footer a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    .legal-footer a:hover {
-      text-decoration: underline;
-    }
-    .legal-footer strong {
-      color: #0f172a;
-      font-weight: 600;
-    }
+    .legal-footer a { color: #0369a1; }
+    .legal-footer strong { color: #0f2438; font-weight: 600; }
   </style>
 </head>
 
 <body>
-  <div id="app"></div>
-  <footer class="legal-footer" aria-label="Información legal">
-    <div class="legal-footer__wrap">
-      <div>
-        <strong>Nombre legal:</strong> Emiliano Nataren Del Rivero · <strong>Marca comercial:</strong> EmiCorp
+  <div id="app">
+    <footer class="legal-footer" aria-label="Información legal">
+      <div class="legal-footer__wrap">
+        <p>
+          <strong>Nombre legal:</strong> Emiliano Nataren Del Rivero · <strong>Marca comercial:</strong> EmiCorp ·
+          <strong>RFC:</strong> NARE021227KI9
+        </p>
+        <p>
+          <strong>Emi:</strong> <a href="/privacy">Privacidad</a> · <a href="/terms">Términos</a> ·
+          <strong>Eko:</strong> <a href="/eko/privacy">Privacidad</a> · <a href="/eko/terms">Términos</a> ·
+          <a href="/legal">Documentos legales</a> ·
+          <a href="mailto:enataren@emicorp.org">enataren@emicorp.org</a>
+        </p>
       </div>
-      <div>
-        <a href="/privacy">Privacidad</a> · <a href="/terms">Términos</a> ·
-        <a href="mailto:enataren@emicorp.org">enataren@emicorp.org</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 

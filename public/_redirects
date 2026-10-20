@@ -7,4 +7,13 @@
 /terminos   /terms/index.html     301
 /terminos/  /terms/index.html     301
 
+/legal      /legal/index.html     200
+/legal/     /legal/index.html     200
+/eko/privacy    /eko/privacy/index.html  200
+/eko/privacy/   /eko/privacy/index.html  200
+/eko/terms      /eko/terms/index.html    200
+/eko/terms/     /eko/terms/index.html    200
+/eko/privacidad /eko/privacy             301
+/eko/terminos   /eko/terms               301
+
 /*  /index.html  200

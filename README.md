@@ -56,21 +56,25 @@ emiaisolutions-client/
 
 El diseño sigue principios minimalistas inspirados en Stripe, Linear y Vercel:
 
-- **Colores:**
-  - Primario: `#0F172A`
-  - Secundario: `#2563EB`
-  - Acento: `#22C55E`
-  - Fondo: `#F8FAFC`
-  - Texto: `#020617`
+- **Colores:** `ink` (texto y banda oscura), `paper` (fondo), `line` (bordes) y `sky` (acento), en `tailwind.config.js`.
 
-- **Tipografía:** Inter (Google Fonts)
+- **Tipografía:** Fraunces (títulos) y Outfit (texto), servidas localmente desde `public/fonts/`.
 
 - **Enfoque:** Mobile-first, responsive, mucho espacio en blanco
 
 ## 📄 Páginas
 
-- `/` - Landing page principal
-- `/privacy` - Política de privacidad y términos
+- `/` - Sitio de EmiCorp con una sección por app (Emi y Eko)
+- `/legal` - Índice de documentos legales por app
+
+Los documentos legales son HTML estáticos en `public/` (Meta los lee sin JavaScript):
+
+| App | Privacidad | Términos |
+|-----|------------|----------|
+| Emi | `/privacy` | `/terms` |
+| Eko | `/eko/privacy` | `/eko/terms` |
+
+**No cambies las URLs de Emi (`/privacy`, `/terms`)**: están registradas en la app de Meta de Emi AI. Las rutas se declaran en `public/_redirects`, antes del `/*` del SPA.
 
 ## 🔧 Configuración
 
